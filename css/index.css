@@ -1,0 +1,283 @@
+
+button {
+  border: 3px solid #9DCDCD;
+}
+
+/* Style cover photo */
+header.cover {
+  height: 100vh;
+}
+
+header.cover > article {
+  height: 100%;
+  background: url("../images/cover.png");
+  background-position: 50% 60%;
+}
+
+header.cover > article > h1 {
+  margin: 2em;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+header.cover > article > h2 {
+  margin: 0;
+  font-size: 5em;
+}
+
+/* Style articles */
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.text > figure {
+  margin: auto;
+  padding: 0 0 45px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+.text > div {
+  margin: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.text > div > p {
+  font-size: 1.25em;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 75%;
+}
+.text > figure > div {
+  -webkit-transform: translate(40px, 40px);
+          transform: translate(40px, 40px);
+  float: left;
+  border: 10px solid rgb(107, 119, 133);
+  margin: auto;
+  max-height: 80%;
+  max-width: 80%;
+}
+.text > figure > div > img {
+  -webkit-transform: translate(-40px, -40px);
+          transform: translate(-40px, -40px);
+  width: 100%;
+  height: 100%;
+}
+
+/* Style first section */
+#intro {
+  padding: 2em 5vw;
+  border: solid #9DCDCD;
+  border-width: 2em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#intro h1 {
+  text-transform: uppercase;
+  font-size: 1em;
+  width: 90%;
+  margin: 0;
+  float: right;
+}
+#intro h2 {
+  width: 90%;
+  clear: both;
+  float: right;
+}
+#intro .text:last-child h1, #intro .text:last-child h2 {
+  float: left;
+}
+#intro > .text:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#intro > .text:first-child > div > p {
+  clear: both;
+  float: right;
+  width: 90%;
+  text-align: right;
+}
+#intro > .text:last-child > div > p {
+  float: left;
+  width: 90%;
+  text-align: left;
+}
+#intro > .text > div > a {
+  width: 90%;
+  margin-top: 1em;
+  display: block;
+  clear: both;
+  float: right;
+}
+#intro > .text:last-child > div > a {
+  float: left;
+}
+#intro > .text:last-child > figure {
+  padding: 45px 0 0 0;
+}
+#intro > .text:last-child > figure > div {
+  -webkit-transform: translate(-40px, -40px);
+          transform: translate(-40px, -40px);
+  float: right;
+}
+#intro > .text:last-child > figure > div > img {
+  -webkit-transform: translate(40px, 40px);
+          transform: translate(40px, 40px);
+}
+
+/* Style find designers section */
+#search > h1 {
+  background-color: #2C3D51;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 2em 5vw;
+  margin: 0;
+}
+#search > .text {
+  margin: 3em 5vw;
+}
+#search > .text > figure {
+}
+#search > .text > figure > div {
+  border-color: #9DCDCD;
+}
+#search > .text > div > h1 {
+  margin: auto;
+  width: 70%;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-bottom: 1em;
+  border: 0px solid #9DCDCD;
+  border-top-width: medium;
+  border-bottom-width: medium;
+  float: right;
+}
+#search > .text > div > p {
+  clear: both;
+  float: right;
+  width: 70%;
+}
+
+/* Style gallery */
+#gallery > img {
+  border: 0 solid #9DCDCD;
+  border-width: 10px 0;
+  width: 100%;
+  display: block;
+}
+
+/* Style contact page */
+#contact {
+  background: url("../images/logos.png") no-repeat;
+  background-position: center;
+}
+#contact > .text {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 80%;
+  margin: auto;
+}
+#contact > .text > figure {
+  margin-top: 2em;
+  margin-bottom: 0;
+  padding: 0;
+}
+#contact > .text > figure > img {
+  float: left;
+  vertical-align: bottom;
+  height: 400px;
+}
+#contact > .text > div {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+#contact > .text > div > h1 {
+  margin: auto;
+  width: 60%;
+  text-align: left;
+  font-size: 3em;
+}
+#contact > .text > div > p {
+  margin-top: 2em;
+  width: 60%;
+  text-align: left;
+  line-height: 1.5em;
+}
+#contact > .text > div > button {
+  margin: 2em;
+}
+
+/* Make website more responsive */
+@media screen and (max-width: 800px) {
+  header.cover > article > h1 {
+    font-size: 2em;
+    margin: 1em;
+  }
+  header.cover > article > h2 {
+    font-size: 4em;
+  }
+  .text {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin: 1em;
+  }
+  .text figure {
+    margin: 1em;
+  }
+  .text > div > h1, .text > div > h2, .text > div > p, .text > div > a {
+    width: 100% !important;
+    float: none !important;
+    text-align: center !important;
+  }
+  #search > .text > div {
+    margin-top: 2em;
+  }
+  #contact {
+    overflow: hidden;
+  }
+  #contact .text {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  #contact figure {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header.cover > article > h1 {
+    font-size: 1.5em;
+    margin: 1.5em;
+  }
+  header.cover > article > h2 {
+    font-size: 3em;
+  }
+}

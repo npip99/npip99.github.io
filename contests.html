@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Design Spring</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/contests.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <header class="logged">
+    <nav>
+      <a href="#"><img src="images/logo1.png"/></a>
+      <ul>
+        <li><a href="#">Home <img src="images/arrow.png"/></a></li>
+        <li><a href="#">Jobs <img src="images/arrow.png"/></a></li>
+        <li><a href="#">Login <img src="images/arrow.png"/></a></li>
+        <li><a href="#">Register <img src="images/arrow.png"/></a></li>
+      </ul>
+    </nav>
+    <nav class="logged">
+      <a href="#"><img src="images/logo3.png"/></a>
+      <ul>
+        <li><a href="#">Home <img src="images/arrow.png"/></a></li>
+        <li><a href="#">Your Work <img src="images/arrow.png"/></a></li>
+        <li><a href="#">Clients <img src="images/arrow.png"/></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><span class="fa fa-envelope"></span></a></li>
+        <li>
+          <a href="#" onclick="showNotifications()"><span class="fa fa-bell"><span class="notification">3</span></span></a>
+          <ul class="notifications hidden">
+            <li>
+              <figure></figure>
+              <div>
+                <h1>rob22922 declined your request</h1>
+                <p>25 minutes ago</p>
+              </div>
+            </li>
+            <li>
+              <figure></figure>
+              <div>
+                <h1>rob22922 declined your request</h1>
+                <p>25 minutes ago</p>
+              </div>
+            </li>
+            <li>
+              <figure></figure>
+              <div>
+                <h1>rob22922 declined your request</h1>
+                <p>25 minutes ago</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="fa fa-user-circle"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="contest-search">
+    <h1>Browse Contests</h1>
+    <article>
+      <!-- Row 2 -->
+      <select id="category">
+        <option>All Categories</option>
+        <option>Category 1</option>
+        <option>Category 2</option>
+      </select>
+      <select id="industry">
+        <option>All Industries</option>
+        <option>Industry 1</option>
+        <option>Industry 2</option>
+      </select>
+      <div id="keywords-title"><div class="table"><h2>Keywords</h2></div></div>
+      <input id="keywords" placeholder="KEYWORDS..."/>
+      <select id="contest-level">
+        <option>Contest Levels</option>
+        <option>Level 1</option>
+        <option>Level 2</option>
+      </select>
+
+      <!-- Row 3 -->
+
+      <!-- Row 4 -->
+      <div id="status-title"><div class="table"><h2>Contest Status</h2></div></div>
+      <div id="status"><button>Open</button><button>Finished</button></div>
+      <div id="order-title"><div class="table"><h2>Order</h2></div></div>
+      <select id="order">
+        <option>Order 1</option>
+        <option>Order 2</option>
+        <option>Order 3</option>
+      </select>
+      <div id="contest-type-title"><div class="table"><h2>Contest Types</h2></div></div>
+      <div id="buttons">
+        <div class="blind"><button></button><button></button></div>
+        <div class="guaranteed"><button></button><button></button></div>
+        <div class="fast-tracked"><button></button><button></button></div>
+        <div class="private"><button></button><button></button></div>
+        <h3 class="blind">Blind</h3>
+        <h3 class="guaranteed">Guaranteed</h3>
+        <h3 class="fast-tracked">Fast-Tracked</h3>
+        <h3 class="private">Private</h3>
+      </div>
+    </article>
+  </section>
+  <section id="results">
+    <p>Showing 830 contests</p>
+    <hr />
+    <article class="contest">
+      <figure>
+
+      </figure>
+      <div>
+        <h1><a href="#">Billboard</a></h1>
+        <p>
+          We are an independent Insurance Agency at sells both personal and commercial/business insurance. We are targeting bo...
+        </p>
+        <p>
+          by john dq
+        </p>
+        <div class="buttons">
+          <button class="highlight">Guaranteed</button>
+          <button>Signage</button>
+          <button>Accounting &amp; Financial</button>
+        </div>
+      </div>
+      <aside>
+        <p><span class="fa fa-image"></span>&nbsp; 0 designs</p>
+        <p><span class="fa fa-clock-o"></span>&nbsp; 4 days</p>
+        <p><span class="fa fa-comment"></span>&nbsp; No feedback</p>
+        <div>
+          <button>Watch</button>
+        </div>
+      </aside>
+    </article>
+    <hr />
+    <article class="contest">
+      <figure>
+
+      </figure>
+      <div>
+        <h1><a href="#">Mosaic Solutions</a></h1>
+        <p>
+          We are a Property Management System software for high end resort owners...
+        </p>
+        <p>
+          by kwalsh
+        </p>
+        <div class="buttons">
+          <button class="highlight">Guaranteed</button>
+          <button class="highlight">Blind</button>
+          <button>Logo design</button>
+          <button>Travel &amp; Hotel</button>
+        </div>
+      </div>
+      <aside>
+        <p><span class="fa fa-image"></span>&nbsp; 0 designs</p>
+        <p><span class="fa fa-clock-o"></span>&nbsp; 4 days</p>
+        <p><span class="fa fa-comment"></span>&nbsp; No feedback</p>
+        <div>
+          <button>Watch</button>
+        </div>
+      </aside>
+    </article>
+    <hr />
+  </section>
+  <footer>
+    <img src="images/logo2.png"/>
+    <div>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>|</li>
+        <li><a href="#">Jobs</a></li>
+        <li>|</li>
+        <li><a href="#">Login</a></li>
+        <li>|</li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
